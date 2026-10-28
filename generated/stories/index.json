@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1792618069644",
+    "story": "Como colaborador de LAFISE, quiero entrar a Productos, abrir Servicios de Nicaragua, filtrar \"Activos\" y ver solo servicios con estado \"Active\".",
+    "scenario": "Filtrar servicios activos muestra solo ese estado",
+    "targetUrl": "https://backoffice-dev.lafise.app/app/lafiservicios",
+    "steps": [
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "button",
+        "value": "Productos",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "link",
+        "value": "Servicios",
+        "exclusive": false,
+        "menu": true
+      },
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "tab",
+        "value": "Nicaragua",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "button",
+        "value": "Activos",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "expect-text",
+        "locatorType": "text",
+        "locator": "Active",
+        "value": "",
+        "exclusive": true,
+        "menu": false
+      }
+    ],
+    "file": "1792618069644/story.feature",
+    "status": "passed",
+    "createdAt": "2026-10-21T21:27:49.644Z",
+    "finishedAt": "2026-10-21T21:28:00.878Z"
+  },
+  {
+    "id": "1792605066758",
+    "story": "Como colaborador de LAFISE, quiero buscar \"recargas\" en las categorías de Nicaragua y ver solo la categoría RECARGAS.",
+    "scenario": "Buscar recargas muestra solo esa categoría",
+    "targetUrl": "https://backoffice-dev.lafise.app/app/lafiservicios",
+    "steps": [
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "button",
+        "value": "Catálogos",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "link",
+        "value": "Categorías",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "click",
+        "locatorType": "role",
+        "locator": "tab",
+        "value": "Nicaragua",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "fill",
+        "locatorType": "placeholder",
+        "locator": "Buscar por banco, categoría, estado o URL de imagen...",
+        "value": "recargas",
+        "exclusive": false,
+        "menu": false
+      },
+      {
+        "action": "expect-text",
+        "locatorType": "text",
+        "locator": "RECARGAS",
+        "value": "",
+        "exclusive": true,
+        "menu": false
+      }
+    ],
+    "file": "1792605066758/story.feature",
+    "status": "passed",
+    "createdAt": "2026-10-21T17:51:06.758Z",
+    "finishedAt": "2026-10-21T19:43:38.475Z"
+  }
+]

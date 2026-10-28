@@ -1,0 +1,37 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="1" time="90.115082">
+<testsuite name="auth\auth.setup.ts" timestamp="2026-10-22T22:16:02.486Z" hostname="setup" tests="1" failures="0" skipped="0" time="19.537" errors="0">
+<testcase name="validar sesión" classname="auth\auth.setup.ts" time="19.537">
+</testcase>
+</testsuite>
+<testsuite name=".features-gen\features\packages\lookup.feature.spec.js" timestamp="2026-10-22T22:16:02.486Z" hostname="bdd" tests="1" failures="0" skipped="0" time="66.386" errors="1">
+<testcase name="Consulta de Paquetes › En Paquetes edito el paquete CLARO Cambio únicamente el Nombre Inglés de PAQUETODO 2 a PAQ" classname=".features-gen\features\packages\lookup.feature.spec.js" time="66.386">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\results\features-packages-lookup.f-59ae2-Inglés-de-PAQUETODO-2-a-PAQ-bdd\error-context.md]]
+]]>
+</system-out>
+<error message="locator.click: Target page, context or browser has been closed" type="Error">
+<![CDATA[  [bdd] › .features-gen\features\packages\lookup.feature.spec.js:17:7 › Consulta de Paquetes › En Paquetes edito el paquete CLARO Cambio únicamente el Nombre Inglés de PAQUETODO 2 a PAQ @packages › Cuando edito el paquete "paquetes" 
+
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })
+
+
+       at steps\packages\lookup.steps.ts:13
+
+      11 | When('edito el paquete {string}', async ({ page }, paquete: string) => {
+      12 |   const fila = page.getByRole('row').filter({ has: page.getByRole('cell', { name: paquete, exact: true }) });
+    > 13 |   await fila.getByRole('button', { name: /editar/i }).click();
+         |                                                       ^
+      14 | });
+      15 |
+        at Object.<anonymous> (C:\Users\MRALFARO\Documents\Lafiservicios\lafiservicios-frontend-qa-automation\steps\packages\lookup.steps.ts:13:55)
+        at C:\Users\MRALFARO\Documents\Lafiservicios\lafiservicios-frontend-qa-automation\.features-gen\features\packages\lookup.feature.spec.js:18:5
+
+    Error Context: test-results\results\features-packages-lookup.f-59ae2-Inglés-de-PAQUETODO-2-a-PAQ-bdd\error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

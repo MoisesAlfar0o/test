@@ -1,0 +1,36 @@
+
+Running 4 tests using 1 worker
+
+
+
+[1/4] [setup] › auth\auth.setup.ts:12:6 › validar sesión
+
+
+[2/4] [bdd] › .features-gen\features\products\filter.feature.spec.js:13:7 › Filtros de servicios › Filtrar servicios activos muestra solo ese estado @services
+[3/4] [bdd] › .features-gen\features\products\filter.feature.spec.js:18:7 › Filtros de servicios › Buscar Tigo entre los activos muestra sus servicios @services
+[4/4] [bdd] › .features-gen\features\products\filter.feature.spec.js:27:7 › Filtros de servicios › Buscar Tigo entre los inactivos avisa que no hay resultados @services
+  1) [bdd] › .features-gen\features\products\filter.feature.spec.js:27:7 › Filtros de servicios › Buscar Tigo entre los inactivos avisa que no hay resultados @services 
+
+    Error: bddStepData not found for step index: 6. Steps: [{"pwStepLine":7,"gherkinStepLine":9,"keywordType":"Context","textWithKeyword":"Dado que abro la ruta \"/app/lafiservicios\"","isBg":true,"stepMatchArguments":[{"group":{"start":17,"value":"\"/app/lafiservicios\"","children":[{"start":18,"value":"/app/lafiservicios","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]},{"pwStepLine":8,"gherkinStepLine":10,"keywordType":"Action","textWithKeyword":"Cuando hago clic en el botón \"Productos\"","isBg":true,"stepMatchArguments":[{"group":{"start":22,"value":"\"Productos\"","children":[{"start":23,"value":"Productos","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]},{"pwStepLine":9,"gherkinStepLine":11,"keywordType":"Action","textWithKeyword":"Y hago clic en el enlace \"Servicios\"","isBg":true,"stepMatchArguments":[{"group":{"start":23,"value":"\"Servicios\"","children":[{"start":24,"value":"Servicios","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]},{"pwStepLine":10,"gherkinStepLine":12,"keywordType":"Action","textWithKeyword":"Y hago clic en la pestaña \"Nicaragua\"","isBg":true,"stepMatchArguments":[{"group":{"start":24,"value":"\"Nicaragua\"","children":[{"start":25,"value":"Nicaragua","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]},{"pwStepLine":28,"gherkinStepLine":27,"keywordType":"Action","textWithKeyword":"Cuando hago clic en el botón \"Inactivos\"","stepMatchArguments":[{"group":{"start":22,"value":"\"Inactivos\"","children":[{"start":23,"value":"Inactivos","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]},{"pwStepLine":29,"gherkinStepLine":28,"keywordType":"Outcome","textWithKeyword":"Entonces veo el texto \"No se encontraron servicios\"","stepMatchArguments":[{"group":{"start":13,"value":"\"No se encontraron servicios\"","children":[{"start":14,"value":"No se encontraron servicios","children":[{}]},{"children":[{}]}]},"parameterTypeName":"string"}]}]
+
+      28 |     await When('hago clic en el botón "Activos"', null, { page }); 
+      29 |     await And('escribo "Tigo" en el campo "Buscar por banco, servicio, proveedor o categoría..."', null, { page }); 
+    > 30 |     await And('hago clic en el botón "Inactivos"', null, { page }); 
+         |           ^
+      31 |     await Then('veo el texto "No se encontraron servicios"', null, { page }); 
+      32 |   });
+      33 |
+        at BddStepInvoker.getBddStepData (C:\Users\MRALFARO\Documents\Lafiservicios\lafiservicios-frontend-qa-automation\node_modules\playwright-bdd\src\runtime\bddStepInvoker.ts:180:13)
+        at BddStepInvoker.And (C:\Users\MRALFARO\Documents\Lafiservicios\lafiservicios-frontend-qa-automation\node_modules\playwright-bdd\src\runtime\bddStepInvoker.ts:39:38)
+        at C:\Users\MRALFARO\Documents\Lafiservicios\lafiservicios-frontend-qa-automation\.features-gen\features\products\filter.feature.spec.js:30:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\results\features-products-filter.f-71bd7-avisa-que-no-hay-resultados-bdd\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\results\features-products-filter.f-71bd7-avisa-que-no-hay-resultados-bdd\error-context.md
+
+
+  1 failed
+    [bdd] › .features-gen\features\products\filter.feature.spec.js:27:7 › Filtros de servicios › Buscar Tigo entre los inactivos avisa que no hay resultados @services 
+  3 passed (40.6s)

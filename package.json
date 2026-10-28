@@ -1,0 +1,27 @@
+{
+  "name": "lafiservicios-frontend-qa-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automatización de pruebas E2E (BDD) del frontend de LAFISErvicios en el BackOffice LAFISE",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test --project=setup --project=bdd --grep-invert @generated",
+    "test:planner": "bddgen && playwright test --project=setup --project=bdd --grep @generated",
+    "test:headed": "bddgen && playwright test --project=setup --project=bdd --headed",
+    "test:smoke": "bddgen && playwright test --project=setup --project=bdd --grep @smoke",
+    "test:ui": "bddgen && playwright test --ui",
+    "test:trace": "bddgen && playwright test --project=setup --project=bdd --trace on",
+    "auth:manual": "playwright test --project=auth-manual --reporter=list",
+    "report": "playwright show-report test-results/reports/playwright-html-report",
+    "type-check": "tsc --noEmit",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@playwright/test": "~1.61.1",
+    "@types/node": "^24.2.0",
+    "dotenv": "^17.2.1",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "~6.0.3"
+  },
+  "packageManager": "pnpm@10.28.2"
+}

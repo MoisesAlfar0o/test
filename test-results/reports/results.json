@@ -1,0 +1,285 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=setup",
+      "--project=bdd",
+      "--grep",
+      "En Paquetes edito el paquete CLARO Cambio únicamente el Nombre Inglés de PAQUETODO 2 a PAQ(?:\\s+@[^\\s]+)*$",
+      "--grep-invert",
+      "@generated"
+    ],
+    "configFile": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\playwright.config.ts",
+    "rootDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/test-results/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/test-results/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "auth-manual",
+        "name": "auth-manual",
+        "testDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/auth",
+        "testIgnore": [],
+        "testMatch": [
+          "/manual\\.setup\\.ts/"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/test-results/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "bdd",
+        "name": "bdd",
+        "testDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/test-results/results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "seed",
+        "name": "seed",
+        "testDir": "C:/Users/MRALFARO/Documents/Lafiservicios/lafiservicios-frontend-qa-automation/seed",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "./test-results/reports/playwright-html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./test-results/reports/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./test-results/reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth\\auth.setup.ts",
+      "file": "auth/auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "validar sesión",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19537,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-22T22:16:03.189Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-840969d2073d83449013",
+          "file": "auth/auth.setup.ts",
+          "line": 12,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": ".features-gen\\features\\packages\\lookup.feature.spec.js",
+      "file": ".features-gen/features/packages/lookup.feature.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Consulta de Paquetes",
+          "file": ".features-gen/features/packages/lookup.feature.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "En Paquetes edito el paquete CLARO Cambio únicamente el Nombre Inglés de PAQUETODO 2 a PAQ",
+              "ok": false,
+              "tags": [
+                "packages"
+              ],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "bdd",
+                  "projectName": "bdd",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 66386,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })\u001b[22m\n\n    at Object.<anonymous> (C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts:13:55)\n    at C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\.features-gen\\features\\packages\\lookup.feature.spec.js:18:5",
+                        "location": {
+                          "file": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts",
+                          "column": 55,
+                          "line": 13
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39msteps\\packages\\lookup.steps.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[33mWhen\u001b[39m(\u001b[32m'edito el paquete {string}'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }\u001b[33m,\u001b[39m paquete\u001b[33m:\u001b[39m string) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m   \u001b[36mconst\u001b[39m fila \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'row'\u001b[39m)\u001b[33m.\u001b[39mfilter({ has\u001b[33m:\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'cell'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m paquete\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m fila\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/editar/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts",
+                            "column": 55,
+                            "line": 13
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39msteps\\packages\\lookup.steps.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[33mWhen\u001b[39m(\u001b[32m'edito el paquete {string}'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }\u001b[33m,\u001b[39m paquete\u001b[33m:\u001b[39m string) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m   \u001b[36mconst\u001b[39m fila \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'row'\u001b[39m)\u001b[33m.\u001b[39mfilter({ has\u001b[33m:\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'cell'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m paquete\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m fila\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/editar/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[2m    at Object.<anonymous> (C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts:13:55)\u001b[22m\n\u001b[2m    at C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\.features-gen\\features\\packages\\lookup.feature.spec.js:18:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Cuando edito el paquete \"paquetes\"",
+                          "duration": 59621,
+                          "error": {
+                            "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })\u001b[22m\n",
+                            "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('row').filter({ has: getByRole('cell', { name: 'paquetes', exact: true }) }).getByRole('button', { name: /editar/i })\u001b[22m\n\n    at Object.<anonymous> (C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts:13:55)\n    at C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\.features-gen\\features\\packages\\lookup.feature.spec.js:18:5",
+                            "location": {
+                              "file": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts",
+                              "column": 55,
+                              "line": 13
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39msteps\\packages\\lookup.steps.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m \u001b[33mWhen\u001b[39m(\u001b[32m'edito el paquete {string}'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }\u001b[33m,\u001b[39m paquete\u001b[33m:\u001b[39m string) \u001b[33m=>\u001b[39m {\n \u001b[90m 12 |\u001b[39m   \u001b[36mconst\u001b[39m fila \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'row'\u001b[39m)\u001b[33m.\u001b[39mfilter({ has\u001b[33m:\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'cell'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m paquete\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m }) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m fila\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/editar/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2026-10-22T22:16:24.928Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\test-results\\results\\features-packages-lookup.f-59ae2-Inglés-de-PAQUETODO-2-a-PAQ-bdd\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\MRALFARO\\Documents\\Lafiservicios\\lafiservicios-frontend-qa-automation\\steps\\packages\\lookup.steps.ts",
+                        "column": 55,
+                        "line": 13
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b939f521d4bd7ce378d4-15abe18763c136d19582",
+              "file": ".features-gen/features/packages/lookup.feature.spec.js",
+              "line": 17,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-22T22:16:02.373Z",
+    "duration": 90115.082,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
